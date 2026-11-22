@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu &amp; Cocktails — Christofa's | Contemporary Greek Cuisine</title>
+  <meta name="description" content="Explore Christofa's contemporary Greek food and cocktail menu: wood-fired mezedes, charcoal skewers, fresh line fish, and Greek botanic cocktails in Cape Town.">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar__inner">
+      <span>Reservations open 30 days ahead · Seasonal Pass Changes Daily</span>
+      <span>123 Harbour Road, Cape Town · <a href="tel:+27210000000">+27 21 000 0000</a></span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="brand" aria-label="Christofa's Home">
+        <img src="assets/img/logo-cameo-transparent.png" alt="Christofa's Cameo Logo" class="brand__logo-img">
+        <div class="brand__text">
+          <img src="assets/img/logo-wordmark.png" alt="Christofa's" class="brand__wordmark-img">
+          <span class="brand__tagline">Contemporary Greek Cuisine</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="our-story.html">Our Story</a></li>
+        <li><a href="menu.html" aria-current="page">Menu</a></li>
+        <li><a href="contact.html">Location</a></li>
+        <li><a href="book.html" class="btn btn-primary btn-sm">Book a Table</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Greek Key Band -->
+  <div class="greek-key-band" aria-hidden="true"></div>
+
+  <!-- Menu Header -->
+  <section class="section" style="padding-bottom: var(--space-3);">
+    <div class="container">
+      <div class="section__head">
+        <img src="assets/img/olive-sprig.png" alt="" class="vignette-icon">
+        <span class="eyebrow eyebrow--no-lines">Contemporary Greek Cuisine</span>
+        <h1>The Menu</h1>
+        <p>Built for sharing. Our kitchen celebrates seasonal coastal produce, wild Aegean herbs, and charcoal cooking. Ask your server what came off the boats this morning.</p>
+      </div>
+
+      <!-- Dietary Legend -->
+      <div class="menu-legend">
+        <span class="menu-legend-item"><span class="menu-entry__badge badge-signature">Signature</span> House Specialty</span>
+        <span class="menu-legend-item"><span class="menu-entry__badge badge-gf">GF</span> Gluten-Free</span>
+        <span class="menu-legend-item"><span class="menu-entry__badge badge-v">V</span> Vegetarian</span>
+      </div>
+
+      <!-- Filter Tabs -->
+      <nav class="menu-filter-nav" aria-label="Menu categories">
+        <button class="menu-filter-btn is-active" data-filter="all">All Dishes</button>
+        <button class="menu-filter-btn" data-filter="small-plates">Small Plates (Mezedes)</button>
+        <button class="menu-filter-btn" data-filter="mains">Mains (Kyrios Piáta)</button>
+        <button class="menu-filter-btn" data-filter="desserts">Desserts (Epidórpia)</button>
+        <button class="menu-filter-btn" data-filter="cocktails">Cocktails</button>
+        <button class="menu-filter-btn" data-filter="printed">Printed Menus</button>
+      </nav>
+
+      <!-- Category 1: Small Plates -->
+      <div class="menu-category" data-category="small-plates">
+        <div class="menu-category__head">
+          <h2 class="menu-category__title">Small Plates</h2>
+          <span class="menu-category__subtitle">Mezedes · For the Center of the Table</span>
+        </div>
+
+        <div class="menu-list-grid">
+          <div class="menu-entry">
+            <div>
+              <div class="menu-entry__title-row">
+                <span class="menu-entry__name">Yemista</span>
+                <span class="menu-entry__badge badge-v">V</span>
+                <span class="menu-entry__badge badge-gf">GF</span>
+              </div>
+              <p class="menu-entry__desc">Herb rice, barrel-aged feta, smoked tomato essence, toasted pine nuts, fresh mint</p>
+            </div>
+            <div class="menu-entry__price">R100</div>
+          </div>
+
+          <div class="menu-entry">
+            <div>
+              <div class="menu-entry__title-row">
+                <span class="menu-entry__name">Keftedes</span>
+                <span class="menu-entry__badge badge-signature">Signature</span>
+              </div>
+              <p class="menu-entry__desc">Tender spiced beef meatballs, cooling sheep's milk tzatziki, house pickles, fresh lemon, mint &amp; dill</p>
+            </div>
+            <div class="menu-entry__price">R115</div>
+          </div>
+
+          <div class="menu-entry">
+            <div>
+              <div class="menu-entry__title-row">
+                <span class="menu-entry__name">Kataifi Prawns</span>
+                <span class="menu-entry__badge badge-signature">Signature</span>
+              </div>
+              <p class="menu-entry__desc">Crispy spun pastry prawns, aromatic ouzo bisque, smoked jalapeño emulsion, preserved lemon, flat parsley</p>
+            </div>
+            <div class="menu-entry__price">R215</div>
+          </div>
+
+          <div class="menu-entry">
+            <div>
+              <div class="menu-entry__title-row">
+                <span class="menu-entry__name">Chicken Souvlaki</span>
+                <span class="menu-entry__badge badge-gf">GF</span>
+              </div>
+              <p class="menu-entry__desc">Charcoal-grilled chicken skewer, charred grapes, roasted baby tomatoes, zucchini ribbons, tzatziki, sorghum, mountain oregano</p>
+            </div>
+            <div class="menu-entry__price">R135</div>
+          </div>
+
+          <div class="menu-entry">
+            <div>
+              <div class="menu-entry__title-row">
+                <span class="menu-entry__name">Pancetta &amp; Saganaki</span>
+                <span class="menu-entry__badge badge-signature">Chef's Pick</span>
+              </div>
+              <p class="menu-entry__desc">Crispy golden saganaki cheese, cured pancetta, fermented hot honey drizzle, crushed pistachio, flaky phyllo crunch</p>
+            </div>
+            <div class="menu-entry__price">R165</div>
+          </div>
+
+          <div class="menu-entry">
+            <div>
+              <div class="menu-entry__title-row">
+                <span class="menu-entry__name">Charred Octopus Salad</span>
+                <span class="menu-entry__badge badge-gf">GF</span>
+              </div>
+              <p class="menu-entry__desc">Wood-grilled tender octopus, heirloom tomatoes, crunchy Persian cucumber, aged feta, kalamata olives, house pickles, oregano</p>
+            </div>
+            <div class="menu-entry__price">R215</div>
+          </div>
+
+          <div class="menu-entry">
+            <div>
+              <div class="menu-entry__title-row">
+                <span class="menu-entry__name">Scallops</span>
+              </div>
+              <p class="menu-entry__desc">Pan-seared coastal scallops, toasted sesame butter, cucumber ribbons, watermelon compression, mild chilli, splash of ouzo, koulouri seed crisp</p>
+            </div>
+            <div class="menu-entry__price">R265</div>
+          </div>
+
+          <div class="menu-entry">
+            <div>
+              <div class="menu-entry__title-row">
+                <span class="menu-entry__name">Meze Platter</span>
+                <span class="menu-entry__badge badge-signature">Feast · 2-3 Guests</span>
+              </div>
+              <p class="menu-entry__desc">Warm wood-fired pita bread, kalamata olives, house hummus, taramasalata dip, grilled halloumi, chicken souvlaki, and herb keftedes</p>
+            </div>
+            <div class="menu-entry__price">R350</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 2: Mains -->
+      <div class="menu-category" data-category="mains">
+        <div class="menu-category__head">
+          <h2 class="menu-category__title">Mains</h2>
+          <span class="menu-category__subtitle">Kyrios Piáta · From Charcoal Fire &amp; Oven</span>
+        </div>
+
+        <div class="menu-list-grid">
+          <div class="menu-entry">
+            <div>
+              <div class="menu-entry__title-row">
+                <span class="menu-entry__name">Harissa Lamb Gyro</span>
+                <span class="menu-entry__badge badge-signature">Signature</span>
+              </div>
+              <p class="menu-entry__desc">Slow-braised Karoo lamb shoulder, house harissa, fire-roasted tomato, fresh mint, crushed olives, strained sheep yoghurt, warm folded pita</p>
+            </div>
+            <div class="menu-entry__price">R330</div>
+          </div>
+
+          <div class="menu-entry">
+            <div>
+              <div class="menu-entry__title-row">
+                <span class="menu-entry__name">Pork Belly</span>
+                <span class="menu-entry__badge badge-gf">GF</span>
+              </div>
+              <p class="menu-entry__desc">Charcoal-grilled pork belly skewer, velvety smoked potato mash, silky lemon-egg avgolemono sauce, quick pickles, tender charred garden greens</p>
+            </div>
+            <div class="menu-entry__price">R225</div>
+          </div>
+
+          <div class="menu-entry">
+            <div>
+              <div class="menu-entry__title-row">
+                <span class="menu-entry__name">Line Fish</span>
+                <span class="menu-entry__badge badge-gf">GF</span>
+              </div>
+              <p class="menu-entry__desc">Fresh daily catch off the Cape coast, charred sweet onion beurre blanc, sweet corn puree, braised leeks, crispy crushed potato, toasted flaked almonds</p>
+            </div>
+            <div class="menu-entry__price">R310</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 3: Desserts -->
+      <div class="menu-category" data-category="desserts">
+        <div class="menu-category__head">
+          <h2 class="menu-category__title">Desserts</h2>
+          <span class="menu-category__subtitle">Epidórpia · Sweet Endings</span>
+        </div>
+
+        <div class="menu-list-grid">
+          <div class="menu-entry">
+            <div>
+              <div class="menu-entry__title-row">
+                <span class="menu-entry__name">Orange</span>
+                <span class="menu-entry__badge badge-v">V</span>
+              </div>
+              <p class="menu-entry__desc">Candied citrus and orange segments, aged Cape brandy infusion, creamy labneh mousse, rooibos reduction, wild wildflower honey, toasted sesame tahini</p>
+            </div>
+            <div class="menu-entry__price">R100</div>
+          </div>
+
+          <div class="menu-entry">
+            <div>
+              <div class="menu-entry__title-row">
+                <span class="menu-entry__name">Apple</span>
+                <span class="menu-entry__badge badge-v">V</span>
+              </div>
+              <p class="menu-entry__desc">Spiced warm semolina halva, rosewater syrup, Meyer lemon zest, toasted almonds, lemongrass essence, crisp shattered phyllo, authentic thick Greek yoghurt</p>
+            </div>
+            <div class="menu-entry__price">R105</div>
+          </div>
+
+          <div class="menu-entry">
+            <div>
+              <div class="menu-entry__title-row">
+                <span class="menu-entry__name">Olive</span>
+                <span class="menu-entry__badge badge-v">V</span>
+                <span class="menu-entry__badge badge-gf">GF</span>
+              </div>
+              <p class="menu-entry__desc">Compressed summer peach, whipped sheep's feta cream, wild Cape bee pollen, aromatic dill oil, candied red grapes</p>
+            </div>
+            <div class="menu-entry__price">R105</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 4: Cocktails -->
+      <div class="menu-category" data-category="cocktails">
+        <div class="menu-category__head">
+          <h2 class="menu-category__title">Cocktail List</h2>
+          <span class="menu-category__subtitle">Botanicals, Smoke, Mastiha &amp; Citrus</span>
+        </div>
+
+        <div class="menu-list-grid">
+          <div class="menu-entry">
+            <div>
+              <div class="menu-entry__name">Aegean Spritz</div>
+              <p class="menu-entry__desc">Skinos Greek Mastiha, crisp Prosecco, sparkling soda, fresh cucumber ribbons, fragrant garden mint</p>
+            </div>
+            <div class="menu-entry__price">R155</div>
+          </div>
+
+          <div class="menu-entry">
+            <div>
+              <div class="menu-entry__name">Charred Lemon Margarita</div>
+              <p class="menu-entry__desc">Charcoal-grilled lemon juice, 100% blue agave reposado tequila, Cointreau, dried mountain oregano salt rim</p>
+            </div>
+            <div class="menu-entry__price">R140</div>
+          </div>
+
+          <div class="menu-entry">
+            <div>
+              <div class="menu-entry__name">Watermelon, Mint &amp; Basil Mojito</div>
+              <p class="menu-entry__desc">White rum, freshly pressed watermelon juice, sweet Mediterranean basil, crushed spearmint, lime, sparkling soda</p>
+            </div>
+            <div class="menu-entry__price">R110</div>
+          </div>
+
+          <div class="menu-entry">
+            <div>
+              <div class="menu-entry__name">Hibiscus &amp; Sour Cherry Cosmopolitan</div>
+              <p class="menu-entry__desc">Citrus vodka, house-steeped wild hibiscus liqueur, tart sour cherry reduction, fresh lime, orange oil essence</p>
+            </div>
+            <div class="menu-entry__price">R120</div>
+          </div>
+
+          <div class="menu-entry">
+            <div>
+              <div class="menu-entry__name">Tahini Espresso Martini</div>
+              <p class="menu-entry__desc">Freshly pulled double espresso, roasted sesame seed tahini paste, dark rum, coffee liqueur, chocolate dusting</p>
+            </div>
+            <div class="menu-entry__price">R135</div>
+          </div>
+
+          <div class="menu-entry">
+            <div>
+              <div class="menu-entry__name">Fig &amp; Rosemary Negroni</div>
+              <p class="menu-entry__desc">Wild dried black fig infused London dry gin, bitter Campari, sweet Italian vermouth, charred rosemary sprig</p>
+            </div>
+            <div class="menu-entry__price">R160</div>
+          </div>
+
+          <div class="menu-entry">
+            <div>
+              <div class="menu-entry__name">Thyme &amp; Hot Honey Scotch Old Fashioned</div>
+              <p class="menu-entry__desc">Single malt Scotch whisky, chilli-fermented hot fynbos honey, aromatic mountain thyme, Angostura &amp; orange bitters</p>
+            </div>
+            <div class="menu-entry__price">R160</div>
+          </div>
+
+          <div class="menu-entry">
+            <div>
+              <div class="menu-entry__name">Black Cherry &amp; Vanilla Whisky Sour</div>
+              <p class="menu-entry__desc">Bourbon whisky, steeped black Amarena cherries, Madagascar vanilla bean syrup, fresh lemon juice, silky egg white foam</p>
+            </div>
+            <div class="menu-entry__price">R180</div>
+          </div>
+
+          <div class="menu-entry">
+            <div>
+              <div class="menu-entry__name">Lemongrass &amp; Green Cardamom Piña Colada</div>
+              <p class="menu-entry__desc">Aged rum, freshly crushed pineapple juice, rich coconut cream, crushed green cardamom pods, bruised lemongrass</p>
+            </div>
+            <div class="menu-entry__price">R140</div>
+          </div>
+
+          <div class="menu-entry">
+            <div>
+              <div class="menu-entry__name">Blue Cheese &amp; Olive Martini</div>
+              <p class="menu-entry__desc">Premium botanical gin, dry French vermouth, blue-cheese-stuffed plump Kalamata olives, savoury olive brine mist</p>
+            </div>
+            <div class="menu-entry__price">R175</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Printed Menu Cards Section -->
+      <div class="menu-sheets-box" data-category="printed">
+        <span class="eyebrow">The Printed Collection</span>
+        <h2>View Original Printed Menus</h2>
+        <p>Our printed menus are hand-crafted on textured parchment with classical Greek meander borders, vintage engraved olive branches, and the chef cameo mark. Click either sheet to view in full resolution.</p>
+        
+        <div class="menu-sheets-grid">
+          <div class="menu-sheet-thumb" data-sheet-src="assets/img/menu-food-sheet.jpg" data-sheet-title="Christofa's — Printed Food Menu">
+            <img src="assets/img/menu-food-sheet.jpg" alt="Christofa's printed food menu showing Small Plates, Mains, and Desserts" loading="lazy">
+            <div class="menu-sheet-thumb__overlay">
+              <span>🔍 Click to View Full Menu Scan</span>
+            </div>
+          </div>
+
+          <div class="menu-sheet-thumb" data-sheet-src="assets/img/menu-cocktail-sheet.jpg" data-sheet-title="Christofa's — Printed Cocktail List">
+            <img src="assets/img/menu-cocktail-sheet.jpg" alt="Christofa's printed cocktail menu showing 10 signature drinks" loading="lazy">
+            <div class="menu-sheet-thumb__overlay">
+              <span>🔍 Click to View Full Cocktail Scan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section section--alt" style="text-align: center;">
+    <div class="container container-narrow">
+      <h2>Ready to join us at the table?</h2>
+      <p style="margin-inline: auto;">Tables move quickly on weekends. Reserve yours online to ensure your place is waiting.</p>
+      <div style="margin-top: var(--space-3);">
+        <a href="book.html" class="btn btn-primary">Book a Table Online</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Lightbox for Scanned Menus -->
+  <div class="modal-overlay" data-modal aria-hidden="true" role="dialog">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 data-modal-title style="margin:0; font-size:1.15rem;">Printed Menu</h3>
+        <button class="modal-close" data-modal-close aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <img data-modal-img src="" alt="Menu Scan">
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="brand" style="margin-bottom: 0.6rem;">
+            <img src="assets/img/logo-cameo-transparent.png" alt="Christofa's" class="footer__logo-img">
+            <div class="brand__text">
+              <img src="assets/img/logo-wordmark-white.png" alt="Christofa's" class="footer__wordmark-img">
+              <span class="brand__tagline">Contemporary Greek Cuisine</span>
+            </div>
+          </div>
+          <p class="footer__desc">Honest Greek cooking, coastal charcoal fire, and shared hospitality in Cape Town.</p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Hours</h4>
+          <p><strong>Tuesday – Sunday</strong></p>
+          <p>12:00 – 22:00</p>
+          <p style="margin-top: 0.6rem;"><strong>Monday</strong></p>
+          <p>Closed (at market)</p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Location</h4>
+          <p>123 Harbour Road</p>
+          <p>Waterfront, Cape Town, 8001</p>
+          <p style="margin-top: 0.6rem;"><a href="tel:+27210000000">+27 21 000 0000</a></p>
+          <p><a href="mailto:hello@christofas.co.za">hello@christofas.co.za</a></p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Explore</h4>
+          <ul class="footer__nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="our-story.html">Our Story &amp; Heritage</a></li>
+            <li><a href="menu.html">Seasonal Food &amp; Cocktails</a></li>
+            <li><a href="book.html">Reserve a Table</a></li>
+            <li><a href="contact.html">Directions &amp; Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div>&copy; <span data-year>2026</span> Christofa's Greek Cuisine. All rights reserved.</div>
+        <div>
+          <a href="contact.html">Terms &amp; Policies</a> · 
+          <a href="contact.html">Dietary Guide</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,22 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Site</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christofa's — Contemporary Greek Cuisine | Cape Town</title>
+  <meta name="description" content="Christofa's brings contemporary Greek cuisine to Cape Town. Wood-grilled mezedes, seasonal plates, craft cocktails, and authentic family hospitality on Harbour Road.">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Site</h1>
-    <p>Hosted via Git + GitHub Pages.</p>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar__inner">
+      <span>Reservations open 30 days ahead · Courtyard &amp; Indoor Dining</span>
+      <span>123 Harbour Road, Cape Town · <a href="tel:+27210000000">+27 21 000 0000</a></span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="brand" aria-label="Christofa's Home">
+        <img src="assets/img/logo-cameo-transparent.png" alt="Christofa's Cameo Logo" class="brand__logo-img">
+        <div class="brand__text">
+          <img src="assets/img/logo-wordmark.png" alt="Christofa's" class="brand__wordmark-img">
+          <span class="brand__tagline">Contemporary Greek Cuisine</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+
+      <ul class="nav-list">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="our-story.html">Our Story</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Location</a></li>
+        <li><a href="book.html" class="btn btn-primary btn-sm">Book a Table</a></li>
+      </ul>
+    </div>
   </header>
-  <main>
-    <section>
-      <h2>Hello</h2>
-      <p>This is a static site served from a git repository.</p>
-    </section>
-  </main>
-  <script src="js/app.js"></script>
+
+  <!-- Greek Key Meander Divider -->
+  <div class="greek-key-band" aria-hidden="true"></div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <span class="eyebrow eyebrow--no-lines">Contemporary Greek Cuisine</span>
+        <h1 class="hero__title">Familiar flavours, set down a little differently.</h1>
+        <p class="hero__desc">Christofa's takes the Greek table — mezedes, charcoal fire, golden olive oil and wild herbs — and plates it with contemporary precision. Shared plates, fresh coastal seafood, and craft cocktails designed to match.</p>
+        
+        <div class="hero__actions">
+          <a href="book.html" class="btn btn-primary">Book a Table</a>
+          <a href="menu.html" class="btn btn-ghost">Explore the Menu</a>
+        </div>
+
+        <div class="hero__meta">
+          <div class="hero__meta-item">
+            <span class="hero__meta-label">Location</span>
+            <span class="hero__meta-val">Harbour Rd, Cape Town</span>
+          </div>
+          <div class="hero__meta-item">
+            <span class="hero__meta-label">Hours</span>
+            <span class="hero__meta-val">Tue–Sun, 12:00–22:00</span>
+          </div>
+          <div class="hero__meta-item">
+            <span class="hero__meta-label">Style</span>
+            <span class="hero__meta-val">Charcoal &amp; Mezedes</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__media">
+        <div class="hero__media-card">
+          <img src="assets/img/dish-keftedes-table.jpg" alt="Christofa's outdoor dining table bathed in Mediterranean sunlight with wine glass, candle, and keftedes meze" width="1600" height="900">
+          <div class="hero__media-badge">
+            <span class="hero__badge-dot"></span>
+            <span>Sunlit Terrace &amp; Courtyard Seating</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Reservation Bar -->
+  <div class="container">
+    <div class="quick-book">
+      <form class="quick-book__form" data-quick-book>
+        <div class="quick-book__field">
+          <label for="quickGuests">Guests</label>
+          <select id="quickGuests" name="quickGuests">
+            <option value="1">1 Person</option>
+            <option value="2" selected>2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+            <option value="5">5 Guests</option>
+            <option value="6">6 Guests</option>
+            <option value="8">8 Guests (Large Table)</option>
+          </select>
+        </div>
+        <div class="quick-book__field">
+          <label for="quickDate">Date</label>
+          <input type="date" id="quickDate" name="quickDate">
+        </div>
+        <div class="quick-book__field">
+          <label for="quickTime">Time</label>
+          <select id="quickTime" name="quickTime">
+            <option value="12:00">12:00 (Lunch)</option>
+            <option value="12:30">12:30 (Lunch)</option>
+            <option value="13:00">13:00 (Lunch)</option>
+            <option value="13:30">13:30 (Lunch)</option>
+            <option value="18:00">18:00 (Dinner)</option>
+            <option value="18:30">18:30 (Dinner)</option>
+            <option value="19:00" selected>19:00 (Dinner)</option>
+            <option value="19:30">19:30 (Dinner)</option>
+            <option value="20:00">20:00 (Dinner)</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Find a Table</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Section: From the Kitchen -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">From The Pass</span>
+        <h2>Seasonal Charcoal &amp; Small Plates</h2>
+        <p>Built for passing across the table. Every plate celebrates fresh coastal ingredients, heritage Greek techniques, and vibrant herb seasonings.</p>
+      </div>
+
+      <div class="grid-3">
+        <!-- Dish 1: Pork Belly -->
+        <article class="dish-card">
+          <div class="dish-card__media">
+            <img src="assets/img/dish-pork-skewer.jpg" alt="Charcoal-grilled pork belly skewer with smoked mash and charred green beans" loading="lazy">
+            <span class="dish-card__tag">Kyrios Piáta</span>
+          </div>
+          <div class="dish-card__body">
+            <div class="dish-card__header">
+              <h3 class="dish-card__title">Pork Belly Skewer</h3>
+              <span class="dish-card__price">R225</span>
+            </div>
+            <p class="dish-card__desc">Charcoal-grilled pork skewer resting on smoked potato mash, silky avgolemono sauce, pickled shallots, charred green beans &amp; toasted sesame.</p>
+            <div class="dish-card__footer">
+              <span>Main Dish</span>
+              <span>Wood-Fired Pass</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 2: Keftedes -->
+        <article class="dish-card">
+          <div class="dish-card__media">
+            <img src="assets/img/dish-keftedes-close.jpg" alt="Golden Keftedes meatballs with sheep's milk tzatziki and pickled pink shallots" loading="lazy">
+            <span class="dish-card__tag">Signature Meze</span>
+          </div>
+          <div class="dish-card__body">
+            <div class="dish-card__header">
+              <h3 class="dish-card__title">Keftedes</h3>
+              <span class="dish-card__price">R115</span>
+            </div>
+            <p class="dish-card__desc">Tender herb-infused beef meatballs served over cooling tzatziki, vibrant pickled pink shallots, crisp fried shallot flakes, lemon, mint and dill.</p>
+            <div class="dish-card__footer">
+              <span>Small Plate</span>
+              <span>Grandmother's Recipe</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 3: Meze Platter & Table Sharing -->
+        <article class="dish-card">
+          <div class="dish-card__media">
+            <img src="assets/img/dish-keftedes-flatlay.jpg" alt="Christofa's meze presentation with artisan ceramics and bronze cutlery" loading="lazy">
+            <span class="dish-card__tag">For The Table</span>
+          </div>
+          <div class="dish-card__body">
+            <div class="dish-card__header">
+              <h3 class="dish-card__title">Meze Platter</h3>
+              <span class="dish-card__price">R350</span>
+            </div>
+            <p class="dish-card__desc">The centerpiece feast: warm grilled pita, kalamata olives, smoked hummus, taramasalata dip, grilled halloumi, chicken souvlaki skewers, and keftedes.</p>
+            <div class="dish-card__footer">
+              <span>Feasting Plate</span>
+              <span>Serves 2 to 3</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align: center; margin-top: var(--space-4);">
+        <a href="menu.html" class="btn btn-ghost">View Full Food &amp; Drink Menu →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Greek Key Accent Line -->
+  <div class="greek-key-band greek-key-band--blue" aria-hidden="true"></div>
+
+  <!-- Section: Brand Story & Philosophy -->
+  <section class="section section--alt">
+    <div class="container story-split">
+      <div class="story-split__poster">
+        <img src="assets/img/chef-poster.jpg" alt="Christofa's brand poster showing the chef in apron and traditional Greek lettering" loading="lazy">
+      </div>
+      <div class="story-split__content">
+        <span class="eyebrow eyebrow--olive">Our Heritage</span>
+        <h2>From one kitchen table to many</h2>
+        <p>Christofa's began the way all memorable Greek kitchens begin — with more family at the door than chairs at the table. Long before there were printed menus, there was a grandmother's kitchen, a wood fire in the courtyard, and an unspoken rule that nobody left without eating.</p>
+        
+        <div class="quote-box">
+          “Every dish here is built for the middle of the table, not the edge of a plate — meant to be passed, shared, argued over, and finished together.”
+        </div>
+
+        <p>Today in Cape Town, we honour that same generous spirit. Our line fish is sourced daily from local coastal boats, our sourdough pita is baked each morning, and our olive oil comes from groves that know the sea wind.</p>
+        
+        <div style="margin-top: var(--space-3);">
+          <a href="our-story.html" class="btn btn-primary">Read the Full Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Cocktails & Aperitifs -->
+  <section class="section section--navy">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow" style="color: #70BAFF;">Cocktail List</span>
+        <h2>Crafted for the Aegean Sunset</h2>
+        <p>Herbs, smoke, mastic, and fresh citrus. Each drink is carefully paired with our charcoal and meze pass.</p>
+      </div>
+
+      <div class="cocktail-grid">
+        <div class="cocktail-item">
+          <div>
+            <div class="cocktail-item__name">Aegean Spritz</div>
+            <small style="color: #A3C7E3;">Skinos Mastiha, prosecco, cucumber, mint</small>
+          </div>
+          <span class="cocktail-item__price">R155</span>
+        </div>
+
+        <div class="cocktail-item">
+          <div>
+            <div class="cocktail-item__name">Charred Lemon Margarita</div>
+            <small style="color: #A3C7E3;">Wood-charred lemon, reposado, oregano salt</small>
+          </div>
+          <span class="cocktail-item__price">R140</span>
+        </div>
+
+        <div class="cocktail-item">
+          <div>
+            <div class="cocktail-item__name">Tahini Espresso Martini</div>
+            <small style="color: #A3C7E3;">Espresso, roasted sesame tahini, dark rum</small>
+          </div>
+          <span class="cocktail-item__price">R135</span>
+        </div>
+
+        <div class="cocktail-item">
+          <div>
+            <div class="cocktail-item__name">Fig &amp; Rosemary Negroni</div>
+            <small style="color: #A3C7E3;">Wild dried black fig infusion, Campari, botanical gin</small>
+          </div>
+          <span class="cocktail-item__price">R160</span>
+        </div>
+
+        <div class="cocktail-item">
+          <div>
+            <div class="cocktail-item__name">Thyme &amp; Hot Honey Old Fashioned</div>
+            <small style="color: #A3C7E3;">Scotch, fermented honey, aromatic thyme</small>
+          </div>
+          <span class="cocktail-item__price">R160</span>
+        </div>
+
+        <div class="cocktail-item">
+          <div>
+            <div class="cocktail-item__name">Blue Cheese &amp; Olive Martini</div>
+            <small style="color: #A3C7E3;">Dry gin, vermouth, stuffed kalamata olives</small>
+          </div>
+          <span class="cocktail-item__price">R175</span>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: var(--space-4);">
+        <a href="menu.html" class="btn btn-secondary" style="border: 1px solid rgba(255,255,255,0.3);">View Complete Beverage &amp; Wine List</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Reservation Call to Action -->
+  <section class="section" style="background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-alt) 100%); text-align: center;">
+    <div class="container container-narrow">
+      <img src="assets/img/olive-sprig.png" alt="" class="vignette-icon">
+      <span class="eyebrow eyebrow--no-lines">Reserve Your Table</span>
+      <h2>Join us around the fire.</h2>
+      <p style="margin-inline: auto; font-size: 1.1rem;">Whether joining us for a leisurely Sunday lunch on the courtyard terrace or an intimate evening dinner, we look forward to welcoming you.</p>
+      
+      <div style="display: flex; gap: var(--space-2); justify-content: center; flex-wrap: wrap; margin-top: var(--space-3);">
+        <a href="book.html" class="btn btn-primary">Book a Table Online</a>
+        <a href="contact.html" class="btn btn-ghost">View Location &amp; Hours</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="brand" style="margin-bottom: 0.6rem;">
+            <img src="assets/img/logo-cameo-transparent.png" alt="Christofa's" class="footer__logo-img">
+            <div class="brand__text">
+              <img src="assets/img/logo-wordmark-white.png" alt="Christofa's" class="footer__wordmark-img">
+              <span class="brand__tagline">Contemporary Greek Cuisine</span>
+            </div>
+          </div>
+          <p class="footer__desc">Honest Greek cooking, coastal charcoal fire, and shared hospitality in Cape Town.</p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Hours</h4>
+          <p><strong>Tuesday – Sunday</strong></p>
+          <p>12:00 – 22:00</p>
+          <p style="margin-top: 0.6rem;"><strong>Monday</strong></p>
+          <p>Closed (at market)</p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Location</h4>
+          <p>123 Harbour Road</p>
+          <p>Waterfront, Cape Town, 8001</p>
+          <p style="margin-top: 0.6rem;"><a href="tel:+27210000000">+27 21 000 0000</a></p>
+          <p><a href="mailto:hello@christofas.co.za">hello@christofas.co.za</a></p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Explore</h4>
+          <ul class="footer__nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="our-story.html">Our Story &amp; Heritage</a></li>
+            <li><a href="menu.html">Seasonal Food &amp; Cocktails</a></li>
+            <li><a href="book.html">Reserve a Table</a></li>
+            <li><a href="contact.html">Directions &amp; Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div>&copy; <span data-year>2026</span> Christofa's Greek Cuisine. All rights reserved.</div>
+        <div>
+          <a href="contact.html">Terms &amp; Policies</a> · 
+          <a href="contact.html">Dietary Guide</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
